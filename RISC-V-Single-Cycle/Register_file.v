@@ -3,7 +3,7 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    23:30:38 03/02/2022 
+// Create Date:    21:23:10 03/21/2022 
 // Design Name: 
 // Module Name:    Register_file 
 // Project Name: 
@@ -36,23 +36,23 @@ module Register_file(
 		begin
 		if(rst == 0)
 			begin
-			reg_mem[0] = 32'h1;
+			reg_mem[0] = 32'h0;
 			reg_mem[1] = 32'h1e;
-			reg_mem[2] = 32'h00;
-			reg_mem[3] = 32'h4;
-			reg_mem[4] = 32'h3;
-			reg_mem[5] = 32'h00;
+			reg_mem[2] = 32'h2;
+			reg_mem[3] = 32'h0;
+			reg_mem[4] = 32'h0;
+			reg_mem[5] = 32'h8;
 			reg_mem[6] = 32'h5;
-			reg_mem[7] = 32'h6;
+			reg_mem[7] = 32'h0;
 			reg_mem[8] = 32'h00;
-			reg_mem[9] = 32'h7;
-			reg_mem[10] = 32'h8;
+			reg_mem[9] = 32'hedb;
+			reg_mem[10] = 32'hfff;
 			reg_mem[11] = 32'h00;
-			reg_mem[12] = 32'h9;
-			reg_mem[13] = 32'ha;
+			reg_mem[12] = 32'h00;
+			reg_mem[13] = 32'h00;
 			reg_mem[14] = 32'h00;
-			reg_mem[15] = 32'hb;
-			reg_mem[16] = 32'hc;
+			reg_mem[15] = 32'h00;
+			reg_mem[16] = 32'h00;
 			reg_mem[17] = 32'h0;
 			reg_mem[18] = 32'h0;
 			reg_mem[19] = 32'h0;

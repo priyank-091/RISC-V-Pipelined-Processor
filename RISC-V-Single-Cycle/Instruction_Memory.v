@@ -3,7 +3,7 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    22:10:48 02/23/2022 
+// Create Date:    20:54:10 03/21/2022 
 // Design Name: 
 // Module Name:    Instruction_Memory 
 // Project Name: 
@@ -30,16 +30,15 @@ always@(reset)
 begin
 if(reset == 0)
 	begin
-	//Mem[3] = 8'h01; Mem[2] = 8'h49; Mem[1] = 8'h83; Mem[0] = 8'h33;//add t1,s2,s4
-	Mem[3] = 8'h00; Mem[2] = 8'h10; Mem[1] = 8'h01; Mem[0] = 8'h33;//add
-	//Mem[7] = 8'h00; Mem[6] = 8'h73; Mem[5] = 8'h0E; Mem[4] = 8'h33;//add t3,t1,t2
-	Mem[7] = 8'h40; Mem[6] = 8'h41; Mem[5] = 8'h82; Mem[4] = 8'hb3;//sub
-	//Mem[11] = 8'h00; Mem[10] = 8'hC9; Mem[9] = 8'hA2; Mem[8] = 8'h83;//lw t0, 12(s3)
-	Mem[11] = 8'h00; Mem[10] = 8'h73; Mem[9] = 8'h74; Mem[8] = 8'h33;//and
-	//Mem[15] = 8'h00; Mem[14] = 8'h59; Mem[13] = 8'hA6; Mem[12] = 8'h23;//sw t0, 12(s3)
-	Mem[15] = 8'h00; Mem[14] = 8'ha4; Mem[13] = 8'he5; Mem[12] = 8'hb3;//or
-	Mem[19] = 8'h00; Mem[18] = 8'hd6; Mem[17] = 8'h17; Mem[16] = 8'h33;//sll
-	Mem[23] = 8'h01; Mem[22] = 8'h07; Mem[21] = 8'hd8; Mem[20] = 8'hb3;//srl
+	Mem[3] = 8'h00; Mem[2] = 8'h01; Mem[1] = 8'h10; Mem[0] = 8'h20;//add
+	Mem[7] = 8'h00; Mem[6] = 8'h85; Mem[5] = 8'h30; Mem[4] = 8'h22;//sub
+	Mem[11] = 8'h01; Mem[10] = 8'h09; Mem[9] = 8'h50; Mem[8] = 8'h24;//and
+	Mem[15] = 8'h01; Mem[14] = 8'h28; Mem[13] = 8'h50; Mem[12] = 8'h25;//or
+	Mem[19] = 8'h01; Mem[18] = 8'h66; Mem[17] = 8'h01; Mem[16] = 8'h80;//sll
+	Mem[23] = 8'h01; Mem[22] = 8'ha9; Mem[21] = 8'h02; Mem[20] = 8'h82;//srl
+	Mem[27] = 8'hfd; Mem[26] = 8'he0; Mem[25] = 8'h00; Mem[24] = 8'h1a;//li r15, 26
+	Mem[31] = 8'hfe; Mem[30] = 8'h00; Mem[29] = 8'h00; Mem[28] = 8'h20;//l1 r16,32
+	Mem[35] = 8'h02; Mem[34] = 8'h2f; Mem[33] = 8'h80; Mem[32] = 8'h20;//add r17,r15,r16
 	end
 end
 endmodule
